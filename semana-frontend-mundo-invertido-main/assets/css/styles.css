@@ -1,0 +1,330 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/banner/capa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header .header-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+    max-width: 200px;
+}
+
+header p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul.gallery-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+}
+
+ul.gallery-container li img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul.gallery-container li img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    margin-top: 40px;
+}
+
+/* Temas */
+body.light-theme {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #181818;
+    color: #adc1c4;
+}
+
+body.dark-theme header button {
+    background-color: #4caf50;
+}
+
+body.dark-theme header button:hover {
+    background-color: #388e3c;
+}
+
+body.dark-theme footer {
+    background-color: #333;
+    border-top-color: #555;
+}
+
+#section-inverted-world {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1d1f27, #282c34);
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#section-inverted-world .section-texts {
+    max-width: 50%;
+}
+
+#section-inverted-world h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#section-inverted-world p {
+    line-height: 1.8;
+}
+
+#section-inverted-world img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#section-stranger-things-trailer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#section-stranger-things-trailer .video-frame iframe {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#section-stranger-things-trailer .section-texts {
+    max-width: 45%;
+}
+
+#section-stranger-things-trailer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#section-stranger-things-trailer p {
+    line-height: 1.8;
+}
+
+#section-stranger-things-gallery {
+    padding: 20px;
+    background: linear-gradient(135deg, #282c34, #1d1f27);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#section-stranger-things-gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#section-form {
+    padding: 30px;
+    background: #444;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#section-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#section-form p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#section-form .form-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#section-form .form-content span {
+    color: #61dafb;
+    font-weight: bold;
+}
+
+#section-form .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#section-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#section-form form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+#section-form form input,
+#section-form form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#section-form form button {
+    padding: 10px 20px;
+    background: #61dafb;
+    color: #282c34;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#section-form form button:hover {
+    background: #21a1f1;
+}
